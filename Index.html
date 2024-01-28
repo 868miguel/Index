@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 20px;
+        }
+
+        #message {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        #response {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">
+        <h1>Will you be my Valentine?</h1>
+        <p>Dear [Riandra Maraj],</p>
+        <p>On this special day, I want to ask you to be my Valentine. You mean the world to me, and I cherish every moment we spend together.</p>
+        <p>If your answer is yes, click the button below:</p>
+        <button onclick="respond()">Yes, I will be your Valentine!</button>
+        <p id="response"></p>
+    </div>
+
+    <script>
+        function respond() {
+            document.getElementById('response').innerText = 'Yes! I will be your Valentine. I love you!';
+        }
+    </script>
+</body>
+</html>
